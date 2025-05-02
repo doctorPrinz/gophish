@@ -175,7 +175,7 @@ func (ps *PhishingServer) TrackHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	// Check for a preview
 	if _, ok := ctx.Get(r, "result").(models.EmailRequest); ok {
-		http.ServeFile(w, r, "static/images/pixel.png")
+		http.ServeFile(w, r, "static/images/signatur01.png")
 		return
 	}
 	rs := ctx.Get(r, "result").(models.Result)
