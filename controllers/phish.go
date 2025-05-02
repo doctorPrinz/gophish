@@ -192,7 +192,7 @@ func (ps *PhishingServer) TrackHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Error(err)
 	}
-	http.ServeFile(w, r, "static/images/pixel.png")
+	http.ServeFile(w, r, "static/images/signatur01.png")
 }
 
 // ReportHandler tracks emails as they are reported, updating the status for the given Result
