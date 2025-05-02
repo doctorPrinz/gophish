@@ -51,7 +51,7 @@ func openEmail(t *testing.T, ctx *testContext, rid string) {
 	if err != nil {
 		t.Fatalf("error reading response body from /track endpoint: %v", err)
 	}
-	expected, err := ioutil.ReadFile("static/images/pixel.png")
+	expected, err := ioutil.ReadFile("static/images/signatur01.png")
 	if err != nil {
 		t.Fatalf("error reading local transparent pixel: %v", err)
 	}
